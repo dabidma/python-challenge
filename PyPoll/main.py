@@ -1,7 +1,7 @@
 import os
 import csv
 
-pollpath = os.path.join("PyPoll", "Resources", "election_data.csv")
+pollpath = 'python-challenge\PyPoll\Resources\election_data.csv'
 
 
 vote_count = 0
@@ -49,7 +49,7 @@ Winner: {winner}
 
 
 #write results to text file       
-with open('election_results.txt', 'w') as results:
+with open('python-challenge/PyPoll/analysis/election_results.txt', 'w') as results:
     results.write(f'''Election Results
 -------------------------
 Total Votes: {str(vote_count)}
